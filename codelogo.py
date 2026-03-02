@@ -159,13 +159,13 @@ ax.text(50, 39.5, '', color=WHITE, fontsize=11, ha='center', va='center',
         fontfamily='monospace', fontweight='bold', zorder=9, alpha=0.9)
 
 # ─── 11. Bottom Tagline Arc Text (simulated with flat text) ──────────────────
-ax.text(50, 17.5, '⟨  COMPILE  ·  CREATE  ·  CONQUER  ⟩',
-        color=CYAN, fontsize=7.5, ha='center', va='center',
+ax.text(50, 21, '>> CREATE  ·  COMPILE <<',
+        color=WHITE, fontsize=7.5, ha='center', va='center',
         fontfamily='monospace', alpha=0.7, zorder=4)
 
 # ─── 12. Top arc label ───────────────────────────────────────────────────────
-ax.text(50, 86.5, '» AMAL JYOTHI  ·  CSE  ·  2025 «',
-        color=PURPLE, fontsize=7, ha='center', va='center',
+ax.text(50, 83, '» CSE  ·  2026 «',
+        color=WHITE, fontsize=7, ha='center', va='center',
         fontfamily='monospace', alpha=0.75, zorder=4)
 
 # ─── 13. Corner bracket decorations ─────────────────────────────────────────
@@ -193,11 +193,6 @@ for angle_deg in [0, 90, 180, 270]:
     x1, y1 = 50 + 36.8 * math.cos(a), 52 + 36.8 * math.sin(a)
     x2, y2 = 50 + 40.5 * math.cos(a), 52 + 40.5 * math.sin(a)
     ax.plot([x1, x2], [y1, y2], color=GREEN, linewidth=2, alpha=0.5, zorder=3)
-
-# ─── 16. Version / detail text ───────────────────────────────────────────────
-ax.text(50, 14, 'v1.0  //  est. 2025',
-        color='#334455', fontsize=6.5, ha='center', va='center',
-        fontfamily='monospace', alpha=0.9, zorder=4)
 
 # ─── Save ────────────────────────────────────────────────────────────────────
 plt.tight_layout(pad=0)
